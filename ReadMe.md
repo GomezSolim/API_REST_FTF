@@ -1,35 +1,43 @@
+Supervisuer : Coach Malik Ba
+
+pour la digitalisation de son système de gestion des statistiques des joueurs, La FTF a lancé un appel d'offre pour la conception d'une solution répondant aux critères de performance suivants :
+
+L'API passe les tests GET, POST, PUT et DELETE sur PostMan 
+
+et le Site déployé sur Heroku
+
+CRITERES DE PERFORMANCES:
+ * L'API passe les tests suivants sur PostMan : GET :
+
+	- Si l'entrée est trouvée, l'API retourne les statistiques en format en format JSON.
+		Si l'entrée n'est pas trouvée, l'API retourne un message d'erreur avec le status code approprié (404)
+		POST:
+
+	- La nouvelle entrée est bien créée
+		L'API affiche le status code 201 après réussite de l'opération.
+		PUT:
+
+	- Si la mise à jour est réussie, l'API affiche le status code 200.
+		Si l'entrée n'est pas trouvée, l'API retourne un message d'erreur avec le status code approprié (404)
+		DELETE:
+
+	- L'entrée ciblée est bien supprimée
+		Si l'entrée n'est pas trouvée, l'API retourne un message d'erreur avec le status code approprié (404)
+		Le back-end reste fonctionnel.
 
 
-![](./icons8-football-48.png)
-# **RESTful API de gestion des statistiques des joueurs de la FTF _ Node.js et express.js_**
+	Technologies utilisées pour construire l'API :
+		- NodeJSName
+		- Express.js - Framework Web rapide, sans opinion et minimaliste pour Node.js
 
----
-## Contexte
-Dans le cadre de la digitalisation de son système de gestion des statistiques des joueurs, nous avons conçu une solution répondant aux critères de performance suivant:
-
-- L'API passe les test GET, POST, PUT et DELETE sur [PostMan](https://www.postman.com/)
-
-- Site deployé sur [Heroku](https://dashboard.heroku.com/)
-
-## Technologies utilisées pour construire l'API:
-- NodeJS
-- Express.js - Framework Web rapide, sans opinion et minimaliste pour  Node.js
-
-### Packages installés
-- nvm - Node version Manager
-- npm - Node Package Manager
-- Node.js
-- Express installé avec npm (npm install express body-parser morgan).
-
----
-## Comment utiliser l'API ?
-Cette API peut:
-- Créer et enregistrer les stats d'un joueur via **POST** <p style="background-color:yellow">https://git.heroku.com/lit-ravine-57639.com/api/V1/stats</p>
+	Packages installés
+		- nvm
+		- npm
+		- Node.js
+	Express installé avec npm (npm install express body-parser morgan).
 
 
-- Obtenir les informarions d'un joueur à partir de son identifiant via **GET** <p style="background-color:yellow">https://lit-ravine-57639.herokuapp.com/api/v1/stats/101</p>
 
-- Mettre à jour les informations d'un joueur existant via **PUT** <p style="background-color:yellow">https://lit-ravine-57639.herokuapp.com/api/v1/stats/101</p>
 
-- Enfin supprimer les stats d'un joueur à travers **DELETE** <p style="background-color:yellow">https://lit-ravine-57639.herokuapp.com/api/v1/stats/101</p>
---
+
+
